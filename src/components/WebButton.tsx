@@ -7,13 +7,13 @@ const WebButton = ({
 	children,
 }: {
 	variant: "PRIMARY" | "SECONDARY" | "GHOST" | "BASIC";
-	customClass: string;
+	customClass?: string;
 	children: string;
 }) => {
 	const bgClass: string = buttonBgVariant[variant];
 	return (
 		<Button
-			className={`text-[#A1A1AA] text-[16px] py-6 font-geist cursor-pointer ${
+			className={` text-[16px] py-6 font-geist cursor-pointer transition-all duration-300 ease-in-out ${
 				customClass ? customClass : ""
 			} ${bgClass}`}
 		>

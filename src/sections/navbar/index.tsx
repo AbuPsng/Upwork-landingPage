@@ -4,7 +4,7 @@ import Navigation from "./component/Navigation";
 
 const Navbar = () => {
 	return (
-		<header className="w-full p-[8px] flex justify-between">
+		<header className="w-full p-[8px] absolute left-0 top-0 flex justify-between">
 			<div className="flex justify-between  w-3/5">
 				{/* Logo and search container */}
 				<LogoAndSearch />

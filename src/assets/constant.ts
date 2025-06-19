@@ -1,17 +1,17 @@
 import type { NavLinkPropType } from "@/types/types";
 
-export const classProperty = {
-	h1: "font-[57px] leading-[66px] tracking-[-3px] font-[700] text-center",
-	h2: "font-[44px] leading-[55px] tracking-[-3px] font-[700] text-center",
-	h3: "font-[30px] leading-[40px] tracking-[-1px] font-[600] text-start",
-	h4: "font-[20px] leading-[28px] tracking-[-1px] font-[600] text-start mb-[50px]",
-	h5: "font-[16px] leading-[24px] tracking-[-0.5px] font-[700] text-start",
-	h6: "font-[18px] leading-[28px] tracking-[-0.5px] capitalize font-[600] text-start",
+export const headingClassProperty = {
+	h1: "text-[57px] text-white  leading-[66px] tracking-[-3px] font-bold text-center  w-full",
+	h2: "text-[44px] text-white  leading-[55px] tracking-[-3px] font-bold text-center",
+	h3: "text-3xl  text-white leading-[40px] tracking-[-1px] font-semibold text-start",
+	h4: "text-xl text-white  leading-[28px] tracking-[-1px] font-semibold text-start mb-[50px]",
+	h5: "text-base text-white  leading-[24px] tracking-[-0.5px] font-bold text-start",
+	h6: "text-lg text-white  leading-[28px] tracking-[-0.5px] capitalize font-semibold text-start",
 };
 
 export const buttonBgVariant = {
 	PRIMARY: "bg-main/90 hover:bg-main text-black hover:text-lightBlack",
-	SECONDARY: "bg-main hover:bg-main/90 text-charcoal hover:text-black",
+	SECONDARY: "bg-charcoal hover:bg-gray-500/20 text-white/70 hover:text-white",
 	GHOST: "bg-main hover:bg-main/90 text-charcoal hover:text-black",
 	BASIC: "text-white/70 hover:text-white",
 };
