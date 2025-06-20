@@ -22,3 +22,49 @@ export const navLinks: Array<NavLinkPropType> = [
 	{ link: "/web", children: "Web" },
 	{ link: "/emails", children: "Emails" },
 ];
+
+export const upperMarqueesIcons = [
+	"../../src/assets/icons/hero/upper/upper-1.png",
+	"../../src/assets/icons/hero/upper/upper-2.png",
+	"../../src/assets/icons/hero/upper/upper-3.png",
+	"../../src/assets/icons/hero/upper/upper-4.png",
+	"../../src/assets/icons/hero/upper/upper-5.png",
+	"../../src/assets/icons/hero/upper/upper-6.png",
+	"../../src/assets/icons/hero/upper/upper-7.png",
+	"../../src/assets/icons/hero/upper/upper-8.png",
+	"../../src/assets/icons/hero/upper/upper-9.png",
+	"../../src/assets/icons/hero/upper/upper-10.png",
+	"../../src/assets/icons/hero/upper/upper-11.png",
+	"../../src/assets/icons/hero/upper/upper-12.png",
+];
+
+export const midMarqueesIcons = [
+	"../../src/assets/icons/hero/mid/mid-1.png",
+	"../../src/assets/icons/hero/mid/mid-2.png",
+	"../../src/assets/icons/hero/mid/mid-3.png",
+	"../../src/assets/icons/hero/mid/mid-4.png",
+	"../../src/assets/icons/hero/mid/mid-5.png",
+	"../../src/assets/icons/hero/mid/mid-6.png",
+	"../../src/assets/icons/hero/mid/mid-7.png",
+	"../../src/assets/icons/hero/mid/mid-8.png",
+	"../../src/assets/icons/hero/mid/mid-9.png",
+	"../../src/assets/icons/hero/mid/mid-10.png",
+	"../../src/assets/icons/hero/mid/mid-11.png",
+	"../../src/assets/icons/hero/mid/mid-12.png",
+	"../../src/assets/icons/hero/mid/mid-13.png",
+];
+
+export const lowerMarqueesIcons = [
+	"../../src/assets/icons/hero/lower/lower-1.png",
+	"../../src/assets/icons/hero/lower/lower-2.png",
+	"../../src/assets/icons/hero/lower/lower-3.png",
+	"../../src/assets/icons/hero/lower/lower-4.png",
+	"../../src/assets/icons/hero/lower/lower-5.png",
+	"../../src/assets/icons/hero/lower/lower-6.png",
+	"../../src/assets/icons/hero/lower/lower-7.png",
+	"../../src/assets/icons/hero/lower/lower-8.png",
+	"../../src/assets/icons/hero/lower/lower-9.png",
+	"../../src/assets/icons/hero/lower/lower-10.png",
+	"../../src/assets/icons/hero/lower/lower-11.png",
+	"../../src/assets/icons/hero/lower/lower-12.png",
+];

@@ -2,12 +2,18 @@ import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import WebButton from "@/components/WebButton";
 import ProfileImageHolder from "./components/ProfileImageHolder";
+import Marquees from "./components/Marquees";
+import {
+	lowerMarqueesIcons,
+	midMarqueesIcons,
+	upperMarqueesIcons,
+} from "@/assets/constant";
 
 const HeroSection = () => {
 	return (
-		<section className="min-h-screen w-full flex flex-col pt-[7rem]  items-center">
+		<section className="min-h-screen w-full flex flex-col pt-[7rem] gap-y-22 items-center">
 			{/* Intro part */}
-			<div className="flex flex-col gap-y-10 justify-center items-center mx-auto h-1/2 w-full max-w-[700px]">
+			<div className="flex flex-col gap-y-8 justify-center items-center mx-auto h-1/2 w-full max-w-[700px]">
 				<div className="w-full flex justify-center gap-x-2 items-center">
 					{/* Images */}
 					<div className="flex justify-center ">
@@ -35,7 +41,11 @@ const HeroSection = () => {
 			</div>
 
 			{/* Marquee Part */}
-			<div className="flex flex-col justify-center items-center"></div>
+			<div className="flex flex-col">
+				<Marquees iconsArray={upperMarqueesIcons} direction="left" />
+				<Marquees iconsArray={midMarqueesIcons} direction="right" />
+				<Marquees iconsArray={lowerMarqueesIcons} direction="left" />
+			</div>
 		</section>
 	);
 };
