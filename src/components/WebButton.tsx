@@ -1,6 +1,8 @@
 import { buttonBgVariant } from "@/assets/constant";
 import { Button } from "./ui/button";
 
+import { twMerge } from "tailwind-merge";
+
 const WebButton = ({
 	variant,
 	customClass,
@@ -13,9 +15,11 @@ const WebButton = ({
 	const bgClass: string = buttonBgVariant[variant];
 	return (
 		<Button
-			className={` text-[16px] py-6 font-geist cursor-pointer transition-all duration-300 ease-in-out ${
-				customClass ? customClass : ""
-			} ${bgClass}`}
+			className={twMerge(
+				" text-[16px] py-6 font-geist cursor-pointer transition-all duration-300 ease-in-out ",
+				customClass,
+				bgClass
+			)}
 		>
 			{children}{" "}
 		</Button>
