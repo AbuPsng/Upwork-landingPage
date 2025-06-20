@@ -1,6 +1,7 @@
+import AboutUs from "./sections/about-us-section";
 import HeroSection from "./sections/hero-section";
 import Navbar from "./sections/navbar";
-import Sponsor from "./sections/sponsor";
+import Sponsor from "./sections/sponsor-section";
 
 const App = () => {
 	return (
@@ -8,6 +9,7 @@ const App = () => {
 			<Navbar />
 			<HeroSection />
 			<Sponsor />
+			<AboutUs />
 		</div>
 	);
 };

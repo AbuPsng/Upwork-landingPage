@@ -11,7 +11,7 @@ import {
 
 const HeroSection = () => {
 	return (
-		<section className="min-h-screen w-full flex flex-col pt-[7rem] gap-y-22 items-center">
+		<section className="min-h-screen w-full flex flex-col pt-[7rem] gap-y-22 items-center overflow-hidden">
 			{/* Intro part */}
 			<div className="flex flex-col gap-y-8 justify-center items-center mx-auto h-1/2 w-full max-w-[700px]">
 				<div className="w-full flex justify-center gap-x-2 items-center">
@@ -41,7 +41,7 @@ const HeroSection = () => {
 			</div>
 
 			{/* Marquee Part */}
-			<div className="flex flex-col">
+			<div className="flex flex-col overflow-hidden">
 				<Marquees iconsArray={upperMarqueesIcons} direction="left" />
 				<Marquees iconsArray={midMarqueesIcons} direction="right" />
 				<Marquees iconsArray={lowerMarqueesIcons} direction="left" />

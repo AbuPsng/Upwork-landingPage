@@ -91,3 +91,38 @@ export const sponsorImages = [
 		name: "Vimeo",
 	},
 ];
+
+export const aboutUsContent = [
+	{
+		heading: "Real-World User Flow Examples",
+		description:
+			"Gain insights into the user experiences of popular apps and websites. Browse through user onboarding processes, login pages, checkouts, search flows, and more to enhance your own designs.",
+		imgUrl: "../../src/assets/images/about/one.png",
+		name: "one",
+		imgClass: "",
+	},
+	{
+		heading: "Screen Recordings & Annotations",
+		description:
+			"Watch detailed screen recordings with step-by-step annotations highlighting key UI/UX design elements & interactions. Understand exactly how top companies guide users through their digital experiences.",
+		imgUrl: "../../src/assets/images/about/two.png",
+		name: "two",
+		imgClass: "",
+	},
+	{
+		heading: "Filter and Search with Ease",
+		description:
+			"Quickly find the screen flows you need with powerful filtering options for categories, industries, and UX patterns. Save time by accessing precisely what you’re looking for with just a few clicks.",
+		imgUrl: "../../src/assets/images/about/three.png",
+		name: "three",
+		imgClass: "w-[352px] h-[400px] ",
+	},
+	{
+		heading: "Learn from the Best",
+		description:
+			"Access a curated library of UX flows from top companies like Airbnb, Dropbox, and Slack. Discover how market leaders design intuitive, user-friendly experiences and apply these insights to your projects.",
+		imgUrl: "../../src/assets/images/about/four.png",
+		name: "four",
+		imgClass: " object-cover absolute right-0",
+	},
+];

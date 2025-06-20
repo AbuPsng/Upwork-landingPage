@@ -45,6 +45,7 @@
 	--color-navLink: #f4f4f5;
 	--color-main: #ffef8a;
 	--color-charcoal: #303037;
+	--color-infoHolder: rgb(39, 39, 42);
 	--font-geist: "Geist", sans-serif;
 }
 
@@ -52,6 +53,7 @@
 	--animate-marquee-left: marquee-left 35s linear infinite;
 	--animate-marquee-right: marquee-right 30s linear infinite;
 	--animate-paused: paused;
+
 	@keyframes marquee-left {
 		0% {
 			transform: translateX(0%);
