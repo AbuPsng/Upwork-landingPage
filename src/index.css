@@ -51,6 +51,7 @@
 @theme {
 	--animate-marquee-left: marquee-left 35s linear infinite;
 	--animate-marquee-right: marquee-right 30s linear infinite;
+	--animate-paused: paused;
 	@keyframes marquee-left {
 		0% {
 			transform: translateX(0%);
@@ -64,6 +65,7 @@
 			transform: translateX(0%);
 		}
 		100% {
+			transform: translateX(100%);
 			transform: translateX(100%);
 		}
 	}

@@ -68,3 +68,26 @@ export const lowerMarqueesIcons = [
 	"../../src/assets/icons/hero/lower/lower-11.png",
 	"../../src/assets/icons/hero/lower/lower-12.png",
 ];
+
+export const sponsorImages = [
+	{
+		imgUrl: "../../src/assets/images/sponsor/Booking.png",
+		name: "Booking",
+	},
+	{
+		imgUrl: "../../src/assets/images/sponsor/Disney.png",
+		name: "Disney",
+	},
+	{
+		imgUrl: "../../src/assets/images/sponsor/Google.png",
+		name: "Google",
+	},
+	{
+		imgUrl: "../../src/assets/images/sponsor/Sonos.png",
+		name: "Sonos",
+	},
+	{
+		imgUrl: "../../src/assets/images/sponsor/Vimeo.png",
+		name: "Vimeo",
+	},
+];

@@ -9,24 +9,24 @@ const Marquees = ({
 }) => {
 	const animateClass = `animate-marquee-${direction}`;
 	return (
-		<div className="flex flex-row  overflow-hidden space-x-4">
-			<div className={`flex space-x-4 w-max ${animateClass}`}>
+		<div className="flex flex-row  overflow-hidden space-x-4 group">
+			<div className={`flex space-x-4 w-max ${animateClass} group-hover:paused`}>
 				{iconsArray.map((item, index) => {
 					return <Icon imgUrl={item} key={index} />;
 				})}
 			</div>
-			<div className={`flex space-x-4 w-max  ${animateClass}`}>
+			<div className={`flex space-x-4 w-max  ${animateClass} group-hover:paused`}>
 				{iconsArray.map((item, index) => {
 					return <Icon imgUrl={item} key={index} />;
 				})}
 			</div>
-			<div className={`flex space-x-4 w-max  ${animateClass}`}>
+			<div className={`flex space-x-4 w-max  ${animateClass} group-hover:paused`}>
 				{iconsArray.map((item, index) => {
 					return <Icon imgUrl={item} key={index} />;
 				})}
 			</div>
 			{direction === "left" && (
-				<div className={`flex space-x-4 w-max  ${animateClass}`}>
+				<div className={`flex space-x-4 w-max  ${animateClass} group-hover:paused`}>
 					{iconsArray.map((item, index) => {
 						return <Icon imgUrl={item} key={index} />;
 					})}
