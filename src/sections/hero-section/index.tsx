@@ -2,12 +2,15 @@ import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import WebButton from "@/components/WebButton";
 import ProfileImageHolder from "./components/ProfileImageHolder";
-import Marquees from "./components/Marquees";
+
 import {
 	lowerMarqueesIcons,
 	midMarqueesIcons,
 	upperMarqueesIcons,
 } from "@/assets/constant";
+
+import MarqueeLeft from "./components/MarqueeLeft";
+import MarqueeRight from "./components/MarqueeRight";
 
 const HeroSection = () => {
 	return (
@@ -42,9 +45,9 @@ const HeroSection = () => {
 
 			{/* Marquee Part */}
 			<div className="flex flex-col overflow-hidden">
-				<Marquees iconsArray={upperMarqueesIcons} direction="left" />
-				<Marquees iconsArray={midMarqueesIcons} direction="right" />
-				<Marquees iconsArray={lowerMarqueesIcons} direction="left" />
+				<MarqueeLeft iconsArray={upperMarqueesIcons} />
+				<MarqueeRight iconsArray={midMarqueesIcons} />
+				<MarqueeLeft iconsArray={lowerMarqueesIcons} />
 			</div>
 		</section>
 	);

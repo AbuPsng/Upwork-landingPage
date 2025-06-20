@@ -126,3 +126,27 @@ export const aboutUsContent = [
 		imgClass: " object-cover absolute right-0",
 	},
 ];
+
+export const founderDetails = [
+	{
+		name: "founder-one",
+		imgUrl: "../../src/assets/images/founder/founder-one.png",
+		role: "UX & UI Inspiration for Designers",
+		description:
+			"Page Flows showcases visual examples & case studies from industry leaders, helping create intuitive, engaging, & high-converting user interfaces & experiences.",
+	},
+	{
+		name: "founder-two",
+		imgUrl: "../../src/assets/images/founder/founder-two.png",
+		role: "Refine the User Journey for Product Managers",
+		description:
+			"Leverage Page Flows to uncover best practices for optimizing product onboarding, enhancing conversion funnels, & improving customer retention.",
+	},
+	{
+		name: "founder-three",
+		imgUrl: "../../src/assets/images/founder/founder-three.png",
+		role: "Perfect App Flows for Developers",
+		description:
+			"Page Flows equips developers with actionable insights & step-by-step examples to fine-tune UX design elements & ensure seamless app performance.",
+	},
+];

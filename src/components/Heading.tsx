@@ -3,7 +3,7 @@ import type { HeadingPropType } from "@/types/types";
 import { twMerge } from "tailwind-merge";
 
 const Heading = ({ variant, children, customClass }: HeadingPropType) => {
-	const headingClass = headingClassProperty[variant] + "text-white";
+	const headingClass = headingClassProperty[variant];
 
 	if (variant === "h1") {
 		return (

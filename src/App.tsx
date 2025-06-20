@@ -1,4 +1,5 @@
 import AboutUs from "./sections/about-us-section";
+import FounderSection from "./sections/founder-section";
 import HeroSection from "./sections/hero-section";
 import Navbar from "./sections/navbar";
 import Sponsor from "./sections/sponsor-section";
@@ -10,6 +11,7 @@ const App = () => {
 			<HeroSection />
 			<Sponsor />
 			<AboutUs />
+			<FounderSection />
 		</div>
 	);
 };

@@ -16,3 +16,10 @@ export type InfoHolderPropTYpe = {
 	name: string;
 	imgClass?: string;
 };
+
+export type FounderDetailPropType = {
+	imgUrl: string;
+	role: string;
+	description: string;
+	name: string;
+};
