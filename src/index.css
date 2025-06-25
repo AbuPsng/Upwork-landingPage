@@ -46,6 +46,7 @@
 	--color-main: #ffef8a;
 	--color-charcoal: #303037;
 	--color-infoHolder: rgb(39, 39, 42);
+	--color-quote: #ffef8a;
 	--font-geist: "Geist", sans-serif;
 }
 
@@ -67,7 +68,6 @@
 			transform: translateX(0%);
 		}
 		100% {
-			transform: translateX(100%);
 			transform: translateX(100%);
 		}
 	}

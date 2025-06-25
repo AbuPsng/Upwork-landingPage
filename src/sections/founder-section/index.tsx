@@ -5,7 +5,7 @@ import { founderDetails } from "@/assets/constant";
 
 const FounderSection = () => {
 	return (
-		<section className="w-full px-[20px] flex flex-col gap-y-10 items-center">
+		<section className="w-full px-[20px] py-4 flex flex-col gap-y-10 items-center">
 			{/* Intro and description part */}
 			<div className="flex flex-col justify-center items-center gap-y-10 max-w-[600px]">
 				<Heading

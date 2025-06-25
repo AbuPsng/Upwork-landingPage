@@ -17,6 +17,7 @@ const AboutUs = () => {
 					const { heading, description, imgUrl, name, imgClass } = content;
 					return (
 						<InfoHolder
+							key={name}
 							heading={heading}
 							description={description}
 							imgUrl={imgUrl}

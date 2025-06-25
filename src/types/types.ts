@@ -23,3 +23,19 @@ export type FounderDetailPropType = {
 	description: string;
 	name: string;
 };
+
+export type ReviewHolderPropType = {
+	imgUrl: string;
+	name: string;
+	role: string;
+	review: string;
+};
+
+export type SubscriptionModelPropType = {
+	plan: boolean;
+	amount: string;
+	heading: string;
+	description: string;
+	planList: Array<string>;
+	conclusion: string;
+};

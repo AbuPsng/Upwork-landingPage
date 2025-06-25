@@ -1,6 +1,6 @@
 import { sponsorImages } from "@/assets/constant";
 import Paragraph from "@/components/Paragraph";
-import LogoHolder from "./components/LogoHolder";
+import LogoHolder from "../../components/LogoHolder";
 
 const Sponsor = () => {
 	return (
