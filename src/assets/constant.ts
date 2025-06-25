@@ -315,3 +315,20 @@ export const pitchImages = [
 	"../../src/assets/images/pitch/6.png",
 	"../../src/assets/images/pitch/7.png",
 ];
+
+export const footerWebLinks = [
+	"Home",
+	"Blog",
+	"Submit a request",
+	"Contact Us",
+];
+
+export const footerSocialLinks = [
+	{ name: "twitter", srcUrl: "../../src/assets/svgs/twitter.svg" },
+	{ name: "linkedin", srcUrl: "../../src/assets/svgs/linkedin.svg" },
+	{ name: "pintrest", srcUrl: "../../src/assets/svgs/pintrest.svg" },
+	{ name: "instagram", srcUrl: "../../src/assets/svgs/instagram.svg" },
+	{ name: "tiktok", srcUrl: "../../src/assets/svgs/tiktok.svg" },
+	{ name: "facebook", srcUrl: "../../src/assets/svgs/facebook.svg" },
+	{ name: "youtube", srcUrl: "../../src/assets/svgs/youtube.svg" },
+];

@@ -24,7 +24,7 @@ const InfiniteCarousel = () => {
 					<img
 						src={img}
 						alt={`slide-${i}`}
-						className=" object-cover w-full h-full rounded-[35px] px-[8px] "
+						className=" object-cover w-full  rounded-[35px] px-[8px] "
 					/>
 				</div>
 			))}
