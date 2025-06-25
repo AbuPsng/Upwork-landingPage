@@ -1,4 +1,5 @@
 import AboutUs from "./sections/about-us-section";
+import Footer from "./sections/footer";
 import FounderSection from "./sections/founder-section";
 import HeroSection from "./sections/hero-section";
 import Navbar from "./sections/navbar";
@@ -18,6 +19,7 @@ const App = () => {
 			<ReviewSection />
 			<SubscriptionSection />
 			<PitchSection />
+			<Footer />
 		</div>
 	);
 };
