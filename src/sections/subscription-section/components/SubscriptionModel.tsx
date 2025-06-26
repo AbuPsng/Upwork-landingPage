@@ -16,7 +16,7 @@ const SubscriptionModel = ({
 	return (
 		<div
 			className={cn(
-				"py-[30px] px-[15px] rounded-[12px] bg-lightDark flex flex-col gap-y-8 ",
+				"py-[30px] px-[15px] w-[95%] rounded-[12px] bg-lightDark flex flex-col gap-y-8 ",
 				plan && "border-[1.5px] border-main"
 			)}
 		>

@@ -4,17 +4,25 @@ import Navigation from "./component/Navigation";
 
 const Navbar = () => {
 	return (
-		<header className="w-full p-[8px] sticky bg-[#18181B] z-20 left-0 top-0 flex justify-between">
-			<div className="flex justify-between  w-3/5">
+		<header className="w-full py-5 px-3 md:py-4 md:px-10 bg-[#18181B] z-20 left-0 top-0 gap-2 flex flex-col lg:flex-row items-center lg:justify-between">
+			<div className="flex justify-between gap-x-2 w-full  lg:w-3/5">
 				{/* Logo and search container */}
 				<LogoAndSearch />
 
 				{/* Navigation holder */}
-				<Navigation />
+				<Navigation customClass="hidden lg:flex md:text-md" />
+
+				{/*For sm and md */}
+				<AuthBtnHolder
+					authClass="flex py-[6px] gap-x-2"
+					btnClass="lg:hidden flex flex-col py-5 text-xs md:text-sm font-semibold"
+				/>
 			</div>
 
 			{/* Sign In and Sign Up buttons holder */}
-			<AuthBtnHolder />
+			<AuthBtnHolder authClass="hidden lg:flex" btnClass="hidden md:flex" />
+
+			<Navigation customClass="lg:hidden flex w-2/5 md:w-fit text-xs md:text-[16px] px-1 " />
 		</header>
 	);
 };

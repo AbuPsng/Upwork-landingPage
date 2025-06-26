@@ -4,15 +4,15 @@ import { aboutUsContent } from "@/assets/constant";
 
 const AboutUs = () => {
 	return (
-		<section className="w-full flex flex-col justify-center items-center py-[60px] gap-y-4 ">
+		<section className="mt-12 w-full flex flex-col justify-center items-center md:py-[60px] gap-y-0 md:gap-y-4 ">
 			<Heading
 				variant="h2"
 				children="Why Choose Page Flows?"
-				customClass="text-white"
+				customClass="text-white "
 			/>
 
 			{/* Info container */}
-			<div className="w-full flex flex-col gap-y-10 py-10 px-20 items-center">
+			<div className="w-full flex flex-col gap-y-10 py-10 px-3 md:px-20 items-center">
 				{aboutUsContent.map((content) => {
 					const { heading, description, imgUrl, name, imgClass } = content;
 					return (

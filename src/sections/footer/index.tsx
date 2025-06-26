@@ -10,10 +10,10 @@ const Footer = () => {
 	return (
 		<footer className="w-full flex flex-col">
 			{/* Upper part */}
-			<div className="p-7 w-full bg-black flex justify-between">
+			<div className="p-7 w-full bg-black flex flex-col gap-y-7 md:flex-row justify-center md:justify-between">
 				{/* Link Part */}
 
-				<div className=" flex  ">
+				<div className=" flex  w-full justify-center">
 					{/* Logo and Company name */}
 					<div className="flex gap-x-2 justify-center items-center ">
 						<img src={logo} alt="logo-image" />
@@ -22,13 +22,13 @@ const Footer = () => {
 				</div>
 
 				{/* Web links */}
-				<div className="flex justify-between gap-x-4 items-center">
+				<div className="flex justify-center md:justify-between gap-x-4 items-center">
 					{footerWebLinks.map((link) => {
 						return (
 							<Paragraph
 								key={link}
 								children={link}
-								customClass="text-white/90 text-sm"
+								customClass="text-white/90 text-xs font-semibold md:font-normal md:text-sm px-0"
 							/>
 						);
 					})}
@@ -38,21 +38,28 @@ const Footer = () => {
 				<div className="flex justify-center items-center gap-x-2">
 					{footerSocialLinks.map((link) => {
 						const { name, srcUrl } = link;
-						return <SocialLinkHolder name={name} svgSrc={srcUrl} />;
+						return (
+							<SocialLinkHolder
+								key={name}
+								name={name}
+								svgSrc={srcUrl}
+								customClass="p-2"
+							/>
+						);
 					})}
 				</div>
 			</div>
 
 			{/* Reserve and Copyright part */}
-			<div className="w-full bg-charcoal flex justify-center gap-x-2 items-center py-4">
+			<div className="w-full bg-charcoal px-5 flex justify-center gap-x-2 items-center py-4">
 				<Paragraph
-					customClass="text-sm"
+					customClass="text-xs md:text-sm "
 					children="Page Flows © Copyright 2025. All rights reserved"
 				/>
 
 				<Dot />
 
-				<Paragraph customClass="text-sm" children="Terms & Privacy" />
+				<Paragraph customClass="text-xs md:text-sm" children="Terms & Privacy" />
 			</div>
 		</footer>
 	);

@@ -1,19 +1,20 @@
 import type { NavLinkPropType } from "@/types/types";
 
 export const headingClassProperty = {
-	h1: "text-[57px] text-white  leading-[66px] tracking-[-3px] font-bold text-center  w-full",
-	h2: "text-[44px] text-white  leading-[55px] tracking-[-3px] font-bold text-center",
-	h3: "text-3xl  text-white leading-[40px] tracking-[-1px] font-semibold text-start",
+	h1: "text-[36px] leading-[45px]  md:text-[57px]  text-white  md:leading-[66px] tracking-[-3px] font-bold text-center  w-full",
+	h2: " text-[30px] font-semibold leading-[43px] tracking-[-2px] md:text-[44px] text-white  md:leading-[55px] md:tracking-[-3px] md:font-bold text-center",
+	h3: "text-[30px] font-semibold leading-[40px] tracking-[-1px] md:text-3xl  text-white leading-[40px] tracking-[-1px] font-semibold text-start",
 	h4: "text-xl text-white  leading-[28px] tracking-[-1px] font-semibold text-start mb-[16px]",
 	h5: "text-base text-white  leading-[24px] tracking-[-0.5px] font-bold text-start",
 	h6: "text-lg text-white  leading-[28px] tracking-[-0.5px] capitalize font-semibold text-start",
 };
 
 export const buttonBgVariant = {
-	PRIMARY: "bg-main/90 hover:bg-main text-black hover:text-lightBlack",
-	SECONDARY: "bg-charcoal hover:bg-gray-500/20 text-white/70 hover:text-white",
-	GHOST: "bg-white/80 hover:bg-white text-charcoal hover:text-black",
-	BASIC: "bg-charcoal hover:bg-gray-400/20  text-white/70 hover:text-white",
+	PRIMARY: "  bg-main/90 hover:bg-main text-black hover:text-lightBlack",
+	SECONDARY: "  bg-charcoal hover:bg-gray-500/20 text-white/70 hover:text-white",
+	GHOST: "  bg-white/80 hover:bg-white text-charcoal hover:text-black",
+	BASIC: "  bg-charcoal hover:bg-gray-400/20  text-white/70 hover:text-white",
+	PLAIN: "px-0 py-0",
 };
 
 export const navLinks: Array<NavLinkPropType> = [
@@ -137,7 +138,7 @@ export const founderDetails = [
 	},
 	{
 		name: "founder-lower",
-		imgUrl: "../../src/assets/images/founder/founder-lower.png",
+		imgUrl: "../../src/assets/images/founder/founder-two.png",
 		role: "Refine the User Journey for Product Managers",
 		description:
 			"Leverage Page Flows to uncover best practices for optimizing product onboarding, enhancing conversion funnels, & improving customer retention.",

@@ -3,7 +3,7 @@ const Icon = ({ imgUrl }: { imgUrl: string }) => {
 		<img
 			src={`${imgUrl}`}
 			alt=""
-			className="w-[34px]  md:w-[94px] object-fit aspect-square rounded-[14px]"
+			className="w-[50px]  md:w-[94px] object-fit aspect-square rounded-[14px]"
 		/>
 	);
 };

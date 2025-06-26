@@ -7,6 +7,7 @@ export type HeadingPropType = {
 export type NavLinkPropType = {
 	link: string;
 	children: string;
+	customClass?: string;
 };
 
 export type InfoHolderPropTYpe = {

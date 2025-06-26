@@ -1,17 +1,27 @@
 import WebButton from "@/components/WebButton";
+import { cn } from "@/lib/utils";
 
-const AuthBtnHolder = () => {
+const AuthBtnHolder = ({
+	authClass,
+	btnClass,
+}: {
+	authClass?: string;
+	btnClass?: string;
+}) => {
 	return (
-		<div className="pr-4">
+		<div className={cn("pr-4", authClass)}>
 			{/* Login Button */}
-			<WebButton variant="BASIC" customClass="text-white">
+			<WebButton variant="PLAIN" customClass={cn("text-white", btnClass)}>
 				Login
 			</WebButton>
 
 			{/* SignUp Button */}
 			<WebButton
 				variant="PRIMARY"
-				customClass="text-black bg-main text-sm px-3 py-6 font-[500] tracking-[0.5]"
+				customClass={cn(
+					"text-black bg-main text-sm px-3 py-6 font-[500] tracking-[0.5]",
+					btnClass
+				)}
 			>
 				Try It Free
 			</WebButton>

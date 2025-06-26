@@ -5,7 +5,7 @@ import { IoMdQuote } from "react-icons/io";
 
 const ReviewHolder = ({ name, review, role, imgUrl }: ReviewHolderPropType) => {
 	return (
-		<div className="bg-infoHolder border-[#e5e7eb] p-6 max-w-[360px] rounded-lg">
+		<div className="bg-infoHolder border-[#3F3F46] border-[1px] p-6 max-w-[360px] rounded-lg mt-3 mr-3">
 			{/* Image and name Part */}
 			<div className="flex gap-x-4">
 				{/* image */}
@@ -25,7 +25,7 @@ const ReviewHolder = ({ name, review, role, imgUrl }: ReviewHolderPropType) => {
 
 			{/* Quote */}
 			<div className="mt-14">
-				<IoMdQuote className="rotate-[180deg] text-quote text-2xl" />
+				<IoMdQuote className="rotate-[180deg] text-main text-2xl" />
 			</div>
 
 			{/* Review */}

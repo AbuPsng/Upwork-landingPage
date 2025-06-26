@@ -5,6 +5,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera */
+}
+
 @theme inline {
 	--radius-sm: calc(var(--radius) - 4px);
 	--radius-md: calc(var(--radius) - 2px);
@@ -70,6 +80,18 @@
 			transform: translateX(100%);
 		}
 	}
+}
+
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide {
+	overflow: visible !important;
+	height: auto !important;
+}
+
+.slick-slide > div {
+	height: auto !important;
 }
 
 :root {
@@ -139,6 +161,13 @@
 	--sidebar-accent-foreground: oklch(0.985 0 0);
 	--sidebar-border: oklch(1 0 0 / 10%);
 	--sidebar-ring: oklch(0.556 0 0);
+}
+
+@theme {
+	--breakpoint-sm: 600px;
+	--breakpoint-md: 700px;
+	--breakpoint-lg: 1100px;
+	--breakpoint-3xl: 120rem;
 }
 
 @layer base {

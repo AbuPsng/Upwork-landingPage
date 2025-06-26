@@ -5,13 +5,13 @@ import ReviewContainer from "./components/ReviewContainer";
 
 const ReviewSection = () => {
 	return (
-		<section className="w-full py-[100px] flex flex-col gap-y-[40px] items-center">
+		<section className="w-full  md:py-[100px] flex flex-col gap-y-[40px] items-center">
 			{/* Intro and companies part */}
-			<div className="flex flex-col gap-y-10 items-center">
+			<div className="flex flex-col gap-y-10 items-center ">
 				<Heading
 					variant="h2"
 					children="Trusted by Designers and Product Teams Worldwide"
-					customClass="max-w-xl text-center"
+					customClass="max-w-xl text-center text-[42px] leading-[55px] tracking-[-3px] font-bold max-w-[300px]"
 				/>
 				<div className="w-full flex justify-center gap-x-12">
 					{trustedImages.map((image) => (
@@ -19,7 +19,7 @@ const ReviewSection = () => {
 							key={image.name}
 							imgUrl={image.imgUrl}
 							name={image.name}
-							customClass="object-cover "
+							customClass="object-contain md:object-cover w-[90px]"
 						/>
 					))}
 				</div>

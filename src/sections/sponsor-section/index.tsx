@@ -10,9 +10,14 @@ const Sponsor = () => {
 				Trusted by 10,000+ brands
 			</Paragraph>
 
-			<div className="w-full flex justify-center items-center gap-x-30">
+			<div className=" flex-wrap gap-y-7 w-full  flex justify-center items-center gap-x-10 md:gap-x-30">
 				{sponsorImages.map((image) => (
-					<LogoHolder key={image.name} imgUrl={image.imgUrl} name={image.name} />
+					<LogoHolder
+						key={image.name}
+						imgUrl={image.imgUrl}
+						name={image.name}
+						customClass="w-[80px]"
+					/>
 				))}
 			</div>
 		</div>

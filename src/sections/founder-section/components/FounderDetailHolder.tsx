@@ -9,7 +9,7 @@ const FounderDetailHolder = ({
 	role,
 }: FounderDetailPropType) => {
 	return (
-		<div className="flex flex-col p-[20px]  rounded-xl bg-lightDark">
+		<div className="flex flex-col p-[20px] w-[90%] rounded-xl bg-lightDark">
 			{/* Image and role */}
 			<div className="flex flex-col items-start gap-y-4">
 				<img

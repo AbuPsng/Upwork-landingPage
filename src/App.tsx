@@ -8,18 +8,27 @@ import ReviewSection from "./sections/review-section";
 import Sponsor from "./sections/sponsor-section";
 import SubscriptionSection from "./sections/subscription-section";
 
+const navbarHeight = 80;
 const App = () => {
 	return (
-		<div className="bg-[#18181B] relative min-h-screen text-[#A1A1AA] text-[16px] font-geist">
+		<div className="h-screen overflow-hidden bg-[#18181B] text-[#A1A1AA] text-[16px] font-geist">
 			<Navbar />
-			<HeroSection />
-			<Sponsor />
-			<AboutUs />
-			<FounderSection />
-			<ReviewSection />
-			<SubscriptionSection />
-			<PitchSection />
-			<Footer />
+
+			<div
+				style={{
+					height: `calc(100vh - ${navbarHeight}px)`,
+				}}
+				className="overflow-y-auto"
+			>
+				<HeroSection />
+				<Sponsor />
+				<AboutUs />
+				<FounderSection />
+				<ReviewSection />
+				<SubscriptionSection />
+				<PitchSection />
+				<Footer />
+			</div>
 		</div>
 	);
 };
