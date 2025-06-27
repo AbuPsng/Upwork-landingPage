@@ -5,7 +5,7 @@ import Navigation from "./component/Navigation";
 const Navbar = () => {
 	return (
 		<header className="w-full py-5 px-3 md:py-4 md:px-10 bg-[#18181B] z-20 left-0 top-0 gap-2 flex flex-col lg:flex-row items-center lg:justify-between">
-			<div className="flex justify-between gap-x-2 w-full  lg:w-3/5">
+			<div className="flex justify-between gap-x-2 w-full  lg:w-4/5">
 				{/* Logo and search container */}
 				<LogoAndSearch />
 
@@ -20,7 +20,10 @@ const Navbar = () => {
 			</div>
 
 			{/* Sign In and Sign Up buttons holder */}
-			<AuthBtnHolder authClass="hidden lg:flex" btnClass="hidden md:flex" />
+			<AuthBtnHolder
+				authClass="hidden lg:flex gap-x-3 items-center"
+				btnClass="hidden lg:flex"
+			/>
 
 			<Navigation customClass="lg:hidden flex w-2/5 md:w-fit text-xs md:text-[16px] px-1 " />
 		</header>

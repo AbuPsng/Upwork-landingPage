@@ -5,7 +5,7 @@ import { IoMdQuote } from "react-icons/io";
 
 const ReviewHolder = ({ name, review, role, imgUrl }: ReviewHolderPropType) => {
 	return (
-		<div className="bg-infoHolder border-[#3F3F46] border-[1px] p-6 max-w-[360px] rounded-lg mt-3 mr-3">
+		<div className="bg-infoHolder border-[#3F3F46] border-[1px] p-6 max-w-[480px] rounded-lg mt-3 mr-3">
 			{/* Image and name Part */}
 			<div className="flex gap-x-4">
 				{/* image */}

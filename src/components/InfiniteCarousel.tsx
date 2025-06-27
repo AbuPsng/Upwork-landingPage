@@ -4,9 +4,10 @@ import "slick-carousel/slick/slick.css";
 
 import { pitchImages } from "@/assets/constant";
 import { useEffect, useState } from "react";
+import useWidth from "@/hooks/useWidth";
 
 const InfiniteCarousel = () => {
-	const [width, setWidth] = useState(window.innerWidth);
+	const width = useWidth();
 
 	const [settings, setSettings] = useState({
 		infinite: true,
@@ -22,17 +23,8 @@ const InfiniteCarousel = () => {
 	});
 
 	useEffect(() => {
-		const handleResize = () => {
-			setWidth(window.innerWidth);
-		};
-		window.addEventListener("resize", handleResize);
-
-		return () => window.removeEventListener("resize", handleResize);
-	}, []);
-
-	useEffect(() => {
 		if (width >= 500) {
-			setSettings((cur) => ({ ...cur, slideToShow: 4 }));
+			setSettings((cur) => ({ ...cur, slidesToShow: 4 }));
 		} else {
 			setSettings((cur) => ({ ...cur, slidesToShow: 1 }));
 		}

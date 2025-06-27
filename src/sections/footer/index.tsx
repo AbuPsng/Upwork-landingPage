@@ -10,10 +10,10 @@ const Footer = () => {
 	return (
 		<footer className="w-full flex flex-col">
 			{/* Upper part */}
-			<div className="p-7 w-full bg-black flex flex-col gap-y-7 md:flex-row justify-center md:justify-between">
+			<div className="p-7 w-full bg-black flex flex-col gap-y-7 lg:flex-row justify-center lg:justify-between">
 				{/* Link Part */}
 
-				<div className=" flex  w-full justify-center">
+				<div className=" flex justify-center">
 					{/* Logo and Company name */}
 					<div className="flex gap-x-2 justify-center items-center ">
 						<img src={logo} alt="logo-image" />

@@ -1,10 +1,10 @@
+import { subscriptionModelDetails } from "@/assets/constant";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-import SubscriptionModel from "./components/SubscriptionModel";
-import { subscriptionModelDetails } from "@/assets/constant";
 import type { SubscriptionModelPropType } from "@/types/types";
-import { useEffect, useState } from "react";
 import Slider from "react-slick";
+import SubscriptionModel from "./components/SubscriptionModel";
+import useWidth from "@/hooks/useWidth";
 
 const settings = {
 	infinite: true,
@@ -20,12 +20,7 @@ const settings = {
 };
 
 const SubscriptionSection = () => {
-	const [width, setWidth] = useState(window.innerWidth);
-
-	useEffect(() => {
-		const handleWidth = () => setWidth(window.innerWidth);
-		window.addEventListener("resize", handleWidth);
-	}, [width]);
+	const width = useWidth();
 
 	return (
 		<section className="w-full flex flex-col items-center py-12 gap-y-4 mb-[30px]">
@@ -43,9 +38,18 @@ const SubscriptionSection = () => {
 			</div>
 
 			{/* Subscription Part */}
-			<div className="hidden md:grid grid-cols-3 gap-[30px] items-center w-full max-w-[1186px] mt-14"></div>
+			<div className="hidden lg:grid grid-cols-3 gap-[30px] items-center w-full max-w-[1186px] mt-14">
+				{subscriptionModelDetails.map((model: SubscriptionModelPropType) => (
+					<div
+						key={model.heading}
+						className="h-full w-full flex items-center justify-center"
+					>
+						<SubscriptionModel {...model} />
+					</div>
+				))}
+			</div>
 
-			{width <= 500 && (
+			{width <= 700 && (
 				<div className="flex w-full mt-10 items-center justify-center">
 					<Slider {...settings}>
 						{subscriptionModelDetails.map((model: SubscriptionModelPropType) => (

@@ -1,8 +1,9 @@
+import { founderDetails } from "@/assets/constant";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-import FounderDetailHolder from "./components/FounderDetailHolder";
-import { founderDetails } from "@/assets/constant";
 import Slider from "react-slick";
+import FounderDetailHolder from "./components/FounderDetailHolder";
+import useWidth from "@/hooks/useWidth";
 
 const settings = {
 	infinite: true,
@@ -18,6 +19,8 @@ const settings = {
 };
 
 const FounderSection = () => {
+	const width = useWidth();
+
 	return (
 		<section className="w-full md:px-[20px] py-4 flex flex-col gap-y-10 items-center">
 			{/* Intro and description part */}
@@ -50,23 +53,25 @@ const FounderSection = () => {
 				})}
 			</div>
 
-			<div className="w-full h-[400px]">
-				<Slider {...settings}>
-					{founderDetails.map((detail) => {
-						const { name, imgUrl, description, role } = detail;
+			{width <= 1100 && (
+				<div className="w-full h-[400px]">
+					<Slider {...settings}>
+						{founderDetails.map((detail) => {
+							const { name, imgUrl, description, role } = detail;
 
-						return (
-							<FounderDetailHolder
-								key={name}
-								name={name}
-								imgUrl={imgUrl}
-								description={description}
-								role={role}
-							/>
-						);
-					})}
-				</Slider>
-			</div>
+							return (
+								<FounderDetailHolder
+									key={name}
+									name={name}
+									imgUrl={imgUrl}
+									description={description}
+									role={role}
+								/>
+							);
+						})}
+					</Slider>
+				</div>
+			)}
 		</section>
 	);
 };

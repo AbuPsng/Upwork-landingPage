@@ -30,7 +30,7 @@ const ReviewContainer = () => {
 	}, []);
 
 	useEffect(() => {
-		if (width >= 500) {
+		if (width >= 1100) {
 			setSettings((cur) => ({ ...cur, slideToShow: 4 }));
 		} else {
 			setSettings((cur) => ({ ...cur, slidesToShow: 1 }));
