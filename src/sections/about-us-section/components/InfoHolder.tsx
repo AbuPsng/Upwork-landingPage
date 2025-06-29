@@ -31,7 +31,7 @@ const InfoHolder = ({
 					src={
 						width >= 1100
 							? name === "four"
-								? "../../src/assets/images/about/five.png"
+								? "/assets/images/about/five.png"
 								: imgUrl
 							: imgUrl
 					}
