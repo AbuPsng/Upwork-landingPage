@@ -1,5 +1,5 @@
 import NavLink from "./NavLink";
-import { navLinks } from "../../../assets/constant.ts";
+import { navLinks } from "../../../constant.ts";
 import type { NavLinkPropType } from "@/types/types.js";
 import { cn } from "@/lib/utils.ts";
 

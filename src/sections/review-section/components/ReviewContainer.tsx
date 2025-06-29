@@ -1,4 +1,4 @@
-import { reviewsDetails } from "@/assets/constant";
+import { reviewsDetails } from "@/constant";
 import ReviewHolder from "./ReviewHolder";
 import Slider from "react-slick";
 import type { ReviewHolderPropType } from "@/types/types";

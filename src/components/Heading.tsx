@@ -1,4 +1,4 @@
-import { headingClassProperty } from "@/assets/constant";
+import { headingClassProperty } from "@/constant";
 import type { HeadingPropType } from "@/types/types";
 import { twMerge } from "tailwind-merge";
 

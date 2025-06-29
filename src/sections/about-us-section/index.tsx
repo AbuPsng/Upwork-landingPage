@@ -1,6 +1,6 @@
 import Heading from "@/components/Heading";
 import InfoHolder from "./components/InfoHolder";
-import { aboutUsContent } from "@/assets/constant";
+import { aboutUsContent } from "@/constant";
 
 const AboutUs = () => {
 	return (

@@ -1,4 +1,4 @@
-import { sponsorImages } from "@/assets/constant";
+import { sponsorImages } from "@/constant";
 import Paragraph from "@/components/Paragraph";
 import LogoHolder from "../../components/LogoHolder";
 

@@ -1,4 +1,5 @@
 const ProfileImageHolder = ({ imgUrl }: { imgUrl: string }) => {
+	console.log(imgUrl);
 	return (
 		<img
 			src={`${imgUrl}`}

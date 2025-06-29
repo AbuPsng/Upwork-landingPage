@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-import { pitchImages } from "@/assets/constant";
+import { pitchImages } from "@/constant";
 import { useEffect, useState } from "react";
 import useWidth from "@/hooks/useWidth";
 

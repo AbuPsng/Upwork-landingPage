@@ -1,6 +1,6 @@
 import Heading from "@/components/Heading";
-import logo from "../../assets/logo.svg";
-import { footerSocialLinks, footerWebLinks } from "@/assets/constant";
+import logo from "/assets/logo.svg";
+import { footerSocialLinks, footerWebLinks } from "@/constant";
 import Paragraph from "@/components/Paragraph";
 
 import { Dot } from "lucide-react";

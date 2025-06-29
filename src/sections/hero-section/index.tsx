@@ -7,7 +7,7 @@ import {
 	lowerMarqueesIcons,
 	midMarqueesIcons,
 	upperMarqueesIcons,
-} from "@/assets/constant";
+} from "@/constant";
 
 import MarqueeLeft from "./components/MarqueeLeft";
 import MarqueeRight from "./components/MarqueeRight";
@@ -20,9 +20,9 @@ const HeroSection = () => {
 				<div className="w-full flex flex-col md:flex-row justify-center gap-2 items-center">
 					{/* Images */}
 					<div className="flex justify-center ">
-						<ProfileImageHolder imgUrl="../../src/assets/profilePictures/small/profile-1.png" />
-						<ProfileImageHolder imgUrl="../../src/assets/profilePictures/small/profile-2.png" />
-						<ProfileImageHolder imgUrl="../../src/assets/profilePictures/small/profile-3.png" />
+						<ProfileImageHolder imgUrl="/assets/profilePictures/small/profile-1.png" />
+						<ProfileImageHolder imgUrl="/assets/profilePictures/small/profile-2.png" />
+						<ProfileImageHolder imgUrl="/assets/profilePictures/small/profile-3.png" />
 					</div>
 					<Paragraph children="Supporting over 100,000+ designers worldwide" />
 				</div>

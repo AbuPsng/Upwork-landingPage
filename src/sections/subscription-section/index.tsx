@@ -1,4 +1,4 @@
-import { subscriptionModelDetails } from "@/assets/constant";
+import { subscriptionModelDetails } from "@/constant";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import type { SubscriptionModelPropType } from "@/types/types";

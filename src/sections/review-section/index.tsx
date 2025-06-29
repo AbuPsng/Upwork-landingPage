@@ -1,4 +1,4 @@
-import { trustedImages } from "@/assets/constant";
+import { trustedImages } from "@/constant";
 import Heading from "@/components/Heading";
 import LogoHolder from "@/components/LogoHolder";
 import ReviewContainer from "./components/ReviewContainer";

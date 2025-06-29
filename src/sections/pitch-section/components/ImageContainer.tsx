@@ -1,4 +1,4 @@
-import { founderImageUrls } from "@/assets/constant";
+import { founderImageUrls } from "@/constant";
 
 const ImageContainer = () => {
 	return (

@@ -1,4 +1,4 @@
-import { buttonBgVariant } from "@/assets/constant";
+import { buttonBgVariant } from "@/constant";
 import { Button } from "./ui/button";
 
 import { twMerge } from "tailwind-merge";

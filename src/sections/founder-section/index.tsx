@@ -1,4 +1,4 @@
-import { founderDetails } from "@/assets/constant";
+import { founderDetails } from "@/constant";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Slider from "react-slick";
